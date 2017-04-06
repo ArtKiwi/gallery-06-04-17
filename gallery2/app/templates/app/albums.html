@@ -1,0 +1,10 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% for album in albums%}
+ 
+<h5><a href="/albums/get/{{album.id}}/">{{album.album_name}}</a></h5>
+<a href="/albums/get/{{album.id}}/"> <img alt="Brand" src={{album.albums_img.url}} height="400"/></a>
+{%endfor%}
+{% endblock %}

@@ -1,0 +1,96 @@
+﻿html {
+  position: relative;
+  min-height: 98%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: none;
+  text-align:center;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url(../../static/fon.JPG) no-repeat;
+}
+.photo-album {
+    width:100%;
+    margin:0px auto;
+    overflow:auto
+}
+.photo-album ul {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+}
+.photo-album ul li {
+    list-style:none;
+    float:left;
+    width:19.5%;
+    margin: 0.25% 0.25% 0.25% 0.25%;
+    
+}
+
+.photo-album ul li a img {
+    max-width:100%;
+    
+
+}
+.albums {
+    width:100%;
+    margin:0px auto;
+    overflow:auto
+}
+
+.albums ul{
+    padding:0;
+    margin:auto;
+    
+}
+
+.albums h5 {
+    text-align:center;
+}
+.albums ul li {
+    list-style:none;
+    float:left;
+    width:32.83%;
+    margin: 0.25% 0.25% 0.25% 0.25%;
+    
+}
+
+.albums ul li img {
+    max-width:100%;
+    
+
+}
+.photo {
+    width:100%;
+    margin:0px auto;
+    overflow:auto
+}
+@media only screen and (max-width: 1500px), only screen and (max-device-width: 1500px) { 
+.photo-album ul li { 
+width: 24%; 
+} 
+} 
+@media only screen and (max-width: 1200px), only screen and (max-device-width: 1200px) { 
+.photo-album ul li { 
+width: 32.33%; 
+} 
+} 
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) { 
+.photo-album ul li { 
+width: 49%; 
+} 
+} 
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) { 
+.photo-album ul li { 
+width: 99%; 
+} 
+}

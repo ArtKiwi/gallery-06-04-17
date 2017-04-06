@@ -1,0 +1,7 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% for photo in photos%}
+<img alt="Brand" src={{photo.file.url}} width="16%"/>
+{%endfor%}
+{% endblock %}

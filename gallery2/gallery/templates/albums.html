@@ -1,0 +1,33 @@
+﻿{% extends "main.html" %}
+
+{% block content %}
+{% load thumbnail %}
+<div class="container">
+<div class="row">
+  {% for album in albums%}
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      {% thumbnail album.albums_img "350x350" crop="center" as im %}
+                    <a href="/albums/get/{{album.id}}/"> <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}"></a>
+                {% endthumbnail %}
+      <div class="caption">
+        <h3>{{album.album_name}}</h3>
+        <p> 
+          {% for keywords in album.keywords.all%}
+          {{keywords}}
+            {% endfor %}
+           </p>
+         
+        <p><a href="/albums/get/{{album.id}}/" class="btn btn-primary" role="button">Просмотр</a> </p>
+      </div>
+    </div>
+  </div>{%endfor%}
+</div>
+</div>
+
+
+
+
+{% endblock %}
+
+
